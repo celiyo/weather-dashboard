@@ -25,35 +25,36 @@
     <!-- max-width for ultra wide resolutions -->
     <div class="container-fluid" style="max-width: 1400px">
       <div class="row">
-        <aside class="col-lg-3 pb-3">
+        <aside class="col-lg-3 pb-3 pt-3">
           <h2 id="form-heading" class="mt-1 h3 form-label">
             Search for a City:
           </h2>
           <form id="search-form" class="form">
             <div class="form-inline form-group">
-              <div class="input-group">
+              <div class="input-group w-100">
                 <input
-                  class="form-input weather-search"
+                  class="form-input weather-search form-control"
                   type="text"
                   id="search-input"
                   placeholder="London"
                   aria-labelledby="form-heading"
                   aria-controls="today forecast"
+                  autocomplete="off"
                 />
                 <div class="input-group-append">
                   <button
                     type="submit"
-                    class="btn search-button"
+                    class="btn search-button btn-primary"
                     id="search-button"
                     aria-label="submit search"
                   >
-                    Search
+                    <i class="fa fa-search"></i>
                   </button>
-                  <hr class="hr weather-hr" />
                 </div>
               </div>
             </div>
           </form>
+          <hr class="hr weather-hr" />
           <div class="list-group" id="history"></div>
         </aside>
 
