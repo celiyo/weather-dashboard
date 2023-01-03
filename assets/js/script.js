@@ -48,7 +48,7 @@ function displayCurrentWeather(data) {
   let dateEl = $('<span class="current-dt">').text("(" + date + ")");
   let iconEl = $("<img>").attr(
     "src",
-    "http://openweathermap.org/img/wn/" + icon + ".png"
+    "https://openweathermap.org/img/wn/" + icon + ".png"
   );
   let tempEl = $("<p>").text("Temp: " + data.main.temp + " °C");
   let windSpeedEl = $("<p>").text("Wind: " + data.wind.speed + " KPH");
